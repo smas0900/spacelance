@@ -159,6 +159,8 @@ body {
     opacity: 60%;
     height: 36px;
 }
+
+
 /* Search ended */
 
 /* Hero Section ended */
@@ -183,7 +185,8 @@ body {
     margin-bottom: 30px;
     transition: transform 0.3s ease; /* Animation for hover effect */
     cursor: pointer;
-    width: 370px;
+    height: 325px;
+
 }
 .card:hover {
     transform: scale(1.05); /* Hover effect */
@@ -202,6 +205,10 @@ body {
     height: 111px;
 }
 
+.hero-card-content {
+    margin-top: 22px;
+}
+
 .card-title {
     font-weight: 500;
     font-size: 30px;
@@ -210,8 +217,49 @@ body {
 
 .card-text {
     color: rgba(157, 157, 157, 1);
+    max-width: 305px;
+    margin: auto;
+    line-height: 36px;
+    font-size: 24px;
+    align-items: center;
+
+}
+/* First card ended */
+
+/* Second card Started "Find the best freelancer section" */
+
+.find-cover-sec {
+    margin-top: 176px;
+
 }
 
+.find-cover-sec img {
+    margin-top: 10px;
+}
+
+.find-cover-sec-content {
+    margin-top: 0px;
+    padding-top: 0px;
+    max-width: 516px;
+    margin-left: auto;
+}
+
+.find-cover-sec h2 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 84px;
+    color: rgba(37, 37, 37, 1);
+}
+
+.find-cover-sec h2 span {
+    color: rgba(30, 136, 229, 1);
+}
+
+.find-cover-sec p {
+    color: rgba(157, 157, 157, 1);
+    line-height: 36px;
+    padding-top: 11px;
+}
 .cont {
     margin-top: 800px ;
 }
