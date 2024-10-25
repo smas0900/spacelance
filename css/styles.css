@@ -80,33 +80,33 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    background-color: #fff; /* White background */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #fff; 
+    border-radius: 10px; 
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
-    width: 300px; /* Adjust the width as per the design */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    width: 420px; /* Adjust the width as per the design */
+    height: 76px;
     position: relative;
 }
 
-/* Styling the search input field */
 .search-input {
     border: none;
     outline: none;
     width: 100%;
-    font-size: 16px;
-    color: #999; /* Placeholder color */
+    font-size: 20px;
+    color: rgba(157, 157, 157, 1); 
     padding: 10px 10px 10px 20px;
-    border-radius: 20px; /* Same as container for a rounded look */
-    background-color: transparent;
+    opacity: 100%;
+    border-radius: 10px;
 }
 
 /* Hide the default search button, replace it with the icon */
 .search-btn {
-    background-color: #007bff; /* Blue background for the icon */
+    background-color: rgba(30, 136, 229, 1); /* Blue background for the icon */
     border: none;
     border-radius: 50%; /* Round icon button */
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,10 +118,6 @@ body {
     transform: translateY(-50%); /* Vertically center the button */
 }
 
-/* Magnifying glass icon styling */
-.search-btn i {
-    font-size: 18px;
-}
 
 /* Optional: Hover effect */
 .search-btn:hover {
@@ -144,6 +140,7 @@ body {
     border-radius: 10px;
     background-color: rgba(30, 136, 229, 1);
     font-size: 24px;
+    margin-right: 19px;
 }
 
 .hero-card-title {
@@ -161,6 +158,51 @@ body {
     width: 588px;
     opacity: 60%;
     height: 36px;
+}
+/* Search ended */
+
+/* Hero Section ended */
+
+/* First card started */
+.container-custom {
+    padding-top: 50px;  /* Custom top padding */
+    padding-bottom: 50px;  /* Custom bottom padding */
+    border-radius: 10px;     /* Rounded corners for the container */
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 1267px;
+    color: rgba(255, 255, 255, 1);
+    height: 325px;
+}
+
+.card {
+    border: none;  /* Remove borders from individual cards */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.icon-circle {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icon-circle img {
+    width: 111px;
+    height: 111px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #6c757d;
 }
 
 .cont {
