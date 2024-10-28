@@ -78,3 +78,36 @@ lightbox.addEventListener('click', function (event) {
 
 // JS for different category card end here
 
+//js for Portfolio-Sction starts from here
+
+const portfolioColumns = document.querySelectorAll('.col-pf'); // Select all portfolio columns
+const portfolioDots = document.querySelectorAll('.dot'); // Select all pagination dots
+const portfolioCardsPerPage = 3; // Number of cards to display per "page"
+let portfolioCurrentPage = 1; // Track the current page
+
+function portfolioShowPage(page) {
+    portfolioCurrentPage = page; // Update the current page number
+    
+    // Hide all portfolio columns initially by removing 'visible' class
+    portfolioColumns.forEach((col) => {
+        col.classList.remove('visible');
+    });
+
+    // Calculate start and end indices for columns on the current page
+    const start = (page - 1) * portfolioCardsPerPage;
+    const end = start + portfolioCardsPerPage;
+
+    // Show the columns for the current page by adding 'visible' class
+    for (let i = start; i < end && i < portfolioColumns.length; i++) {
+        portfolioColumns[i].classList.add('visible'); // Display each column within the page range
+    }
+
+    // Update active dot
+    portfolioDots.forEach(dot => dot.classList.remove('active')); // Remove 'active' class from all dots
+    portfolioDots[page - 1].classList.add('active'); // Add 'active' class to the current page dot
+}
+
+// Initialize the first page
+portfolioShowPage(portfolioCurrentPage);
+
+  
