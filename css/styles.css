@@ -288,6 +288,7 @@ body {
 .recently-big-heading {
     font-weight: 500;
     font-size: 56px;
+    color: rgba(37, 37, 37, 1);
 }
 
 .recently-big-heading span {
@@ -335,6 +336,7 @@ body {
     max-width: 1268px;
     scrollbar-width: none; 
     padding-left: 6px;
+    padding-bottom: 4px;
 }
 
 .scroll-item {
@@ -400,4 +402,140 @@ body {
 
 .scroll-container a {
     color: rgba(30, 136, 229, 1);
+}
+/* Scroll card cards ends here*/
+
+/* Diff category card starts from here  */
+
+.diff-category-card-container h5 {
+    margin-bottom: 30px;
+}
+
+.diff-category-card-container {
+    max-width: 1268px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51px !important;
+    padding: 0;
+    margin-top: 179px;
+}
+
+.diff-category-card {
+    position: relative;
+    width: 290px;
+    height: 241px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+}
+
+.diff-category-card img {
+    width: 290px;
+    height: 241px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+}
+
+.diff-category-card:hover img {
+    transform: scale(1.05);
+}
+
+.diff-category-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.diff-category-card .overlay-text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2; /* Adjust line height as needed */
+}
+.diff-container-col {
+    padding-right: 31px;
+}
+
+.more-categories-btn {
+    margin-top: 24px;
+    background-color: rgba(30, 136, 229, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    width: 242px;
+    height: 76px;
+}
+
+/* lightbox */
+
+.lightbox {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    overflow: hidden;
+
+}
+
+.lightbox-image {
+    min-width: 1000px; /* Fixed width for the image */
+    height: 500px; /* Fixed height for the image */
+    object-fit: contain; /* Ensures the image scales without stretching */
+    display: block;
+    margin: auto;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
