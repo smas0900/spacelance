@@ -7,7 +7,9 @@
     <title>Product Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../spacelance/css/styles.css">
-    <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous">
+
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -251,7 +253,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- different category card started from here -->
@@ -261,7 +262,7 @@
         <div class="row ">
             <!-- First row of cards (always visible) -->
             <div class="col-md-3 diff-container-col" data-index="0">
-                <div class="diff-category-card" >
+                <div class="diff-category-card">
                     <img src="../spacelance/images/graphicdesign.png" alt="Category Image" class="category-image">
                     <div class="overlay">
                         <p class="overlay-text">Graphic & Design</p>
@@ -373,7 +374,8 @@
         </div>
 
         <!-- Toggle Button -->
-        <button id="toggleButton" class="btn btn-primary more-categories-btn" onclick="toggleCategories()">More Categories</button>
+        <button id="toggleButton" class="btn btn-primary more-categories-btn" onclick="toggleCategories()">More
+            Categories</button>
     </section>
 
     <div id="lightbox" class="lightbox">
@@ -386,88 +388,128 @@
 
     <!-- Portfolio section started -->
     <section class="container portfolio-section">
-            <p class="subtitle text-muted">Logos, websites, book covers & more!</p>
-            <h2>Checkout The Best <span class="text-primary">Portfolios</span> Here</h2>
-            
-            <!-- Flex container to ensure even alignment -->
-            <div class="row d-flex flex-wrap justify-content-center portfolio-cards">
-                
-                <!-- Each card wrapped with visibility toggling at the column level -->
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image1.jpg" alt="Bunny.design" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Bunny.design</h3>
-                            <p class="card-text text-muted">UI/UX Designer</p>
-                        </div>
+        <p class="subtitle">Logos, websites, book covers & more!</p>
+        <h2 class="recently-big-heading">Checkout The Best <span>Portfolios</span> Here</h2>
+
+        <!-- Flex container to ensure even alignment -->
+        <div class="row d-flex flex-wrap portfolio-cards">
+
+            <!-- Each card wrapped with visibility toggling at the column level -->
+            <div class="col-lg-4 col-pf ">
+                <div class="profile-card">
+                    <img src="../spacelance/images/bunnydesign.png" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Bunny.design</h3>
+                        <p class="profile-title">UI/UX Designer</p>
+                        <a href="#" class="profile-link">&#8594;</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image2.jpg" alt="Bhaskar Tiwari" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Bhaskar Tiwari</h3>
-                            <p class="card-text text-muted">Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image3.jpg" alt="Aksara Joshi" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Aksara Joshi</h3>
-                            <p class="card-text text-muted">Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image1.jpg" alt="Bunny.design" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Bunny.design</h3>
-                            <p class="card-text text-muted">UI/UX Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image2.jpg" alt="Bhaskar Tiwari" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Bhaskar Tiwari</h3>
-                            <p class="card-text text-muted">Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image3.jpg" alt="Aksara Joshi" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Aksara Joshi</h3>
-                            <p class="card-text text-muted">Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 col-pf">
-                    <div class="card">
-                        <img src="path/to/image2.jpg" alt="Bhaskar Tiwari" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Bhaskar Tiwari</h3>
-                            <p class="card-text text-muted">Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>  
-                <!-- Repeat as necessary for all cards -->
-    
             </div>
-            
-            <div class="pagination">
-                <span class="dot active" onclick="portfolioShowPage(1)"></span>
-                <span class="dot" onclick="portfolioShowPage(2)"></span>
-                <span class="dot" onclick="portfolioShowPage(3)"></span>
+
+            <div class="col-lg-4 col-pf">
+                <div class="profile-card">
+                    <img src="../spacelance/images/bhaskarTiwari.png" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Bunny.design</h3>
+                        <p class="profile-title">UI/UX Designer</p>
+                        <a href="#" class="profile-link">&#8594;</a>
+                    </div>
+                </div>
             </div>
-     
+
+            <div class="col-lg-4 col-pf">
+                <div class="profile-card">
+                    <img src="../spacelance/images/bhaskarTiwari.png" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">Bunny.design</h3>
+                        <p class="profile-title">UI/UX Designer</p>
+                        <a href="#" class="profile-link">&#8594;</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Repeat as necessary for all cards -->
+
+        </div>
+
+        <div class="pagination">
+            <span class="dot active" onclick="portfolioShowPage(1)"></span>
+            <span class="dot" onclick="portfolioShowPage(2)"></span>
+            <span class="dot" onclick="portfolioShowPage(3)"></span>
+        </div>
+
     </section>
 
+    <!-- Newsletter section started -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Newsletter Subscription</h2>
+            <p>Subscribe to our newsletter to get new freelance work and projects</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 form-res">
+                    <form>
+                        <input type="email" class="form-control" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn form-btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section started -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start footer-con">
+                <!-- Company Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0">
+                    <div class="footer-logo">
+                        <img src="../spacelance/images/footerlogo.png" alt="Logo">
+                    </div>
+                    <p>Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="../spacelance/icons/ant-design_instagram-filled.svg"
+                                alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/brandico_twitter-bird.svg" alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/bxl_facebook.svg" alt="ilustration"></a>
+                    </div>
+                </div>
+
+                <!-- For Clients -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-colone">
+                    <h5>For Clients</h5>
+                    <a href="#">Find Freelancers</a>
+                    <a href="#">Post Project</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <!-- For Freelancers -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-coltwo">
+                    <h5>For Freelancers</h5>
+                    <a href="#">Find Work</a>
+                    <a href="#">Create Account</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-ico">
+                    <h5>Call Us</h5>
+                    <p><i class="loc"><img src="../spacelance/icons/location-svgrepo-com (1).svg"
+                                alt="ilustration"></i>Kenya</p>
+                    <p><i class="pho"><img src="../spacelance/icons/phone.svg" alt="ilustration"></i>+254700000000</p>
+                    <p><i class="em"><img src="../spacelance/icons/clarity_email-line.svg"
+                                alt="ilustration"></i>bluelance@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    &copy; 2022 Spacelance. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/spacelance/components/index.js"></script>
