@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../spacelance/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="hero">
+        <div class="navbar-wrapper">
+
+            <nav class="navbar navbar-expand-lg rounded-navbar ">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../spacelance/index.html">
+                        <img src="../spacelance/images/IMG-20220218-WA0001.png" alt="Logo" class="d-inline-block">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="../spacelance/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../spacelance/Generalpage.html">Find Freelancers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"  aria-current="page" href="../spacelance/blogdetailpage.html">blog detail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../spacelance/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-nav nav-link" href="#">Post a project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    <section class="container text-center diff-category-card-container justify-content-center ">
+        <h5 class="recently-big-heading">Blog <span>Details</span></h5>
+
+        <div class="row ">
+            <!-- First row of cards (always visible) -->
+            <div class="col-md-3 diff-container-col" data-index="0">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/graphicdesign.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Graphic & Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col" data-index="1">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/cartoonandani.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Cartoon Animation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col" data-index="3">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/ilustration.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Illustration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col" data-index="4">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/flyers.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Flyers & Vouchers</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar structure for more cards in the first row -->
+        </div>
+
+        <!-- Second row of cards -->
+
+        <div class="row">
+            <!-- First row of cards (always visible) -->
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/logo-on-paper.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Logo Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/social-graphics.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Social graphics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/article-writing.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Article writing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/video-editing.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Video Editing</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar structure for more cards in the first row -->
+        </div>
+
+        <!-- 3RD row of cards (initially hidden) -->
+
+        <div class="row d-none" id="extraCategories">
+            <div class="col-md-3 diff-container-col ">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/graphicdesign.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Graphic & Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/cartoonandani.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Cartoon Animation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/ilustration.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Illustration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 diff-container-col">
+                <div class="diff-category-card">
+                    <img src="../spacelance/images/flyers.png" alt="Category Image" class="category-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Flyers & Vouchers</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar structure for more additional cards -->
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="toggleButton" class="btn btn-primary more-categories-btn" onclick="toggleCategories()">More
+            Categories</button>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span> <!-- Close button -->
+        <span class="prev">&#10094;</span> <!-- Previous button -->
+        <img class="lightbox-image" id="lightboxImage"> <!-- Image displayed in lightbox -->
+        <span class="next">&#10095;</span> <!-- Next button -->
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

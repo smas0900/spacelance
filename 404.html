@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2fafa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .error-container {
+            text-align: center;
+        }
+        .error-code {
+            font-size: 100px;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .error-message {
+            font-size: 24px;
+            color: #6c757d;
+        }
+        .error-description {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            color: white;
+            background-color: rgba(30, 136, 229, 1);
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            height: 76px;
+            min-width: 250px;
+    font-weight: 600;
+    line-height: 36px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 error-container">
+                <div class="error-code">404</div>
+                <div class="error-message">Oops! Page Not Found</div>
+                <p class="error-description">
+                    The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+                </p>
+                <a href="../spacelance/index.html" class="btn btn-custom">Go Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

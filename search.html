@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <script>
+    // This script retrieves the search term from the URL and displays it on the page
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = urlParams.get('query');
+      if (searchQuery) {
+        document.getElementById('search-result').textContent = `You searched: "${searchQuery}"`;
+      } else {
+        document.getElementById('search-result').textContent = "No search term provided.";
+      }
+    };
+  </script>
+</head>
+<body>
+
+  <h1>Search Results</h1>
+  <p id="search-result"></p> <!-- This will display "You searched: your search term" -->
+
+</body>
+</html>
