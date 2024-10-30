@@ -4,7 +4,7 @@
 
 ## Live Demo 
 
-[Portfolio live demo](https://smas0900.github.io/)
+[SpaceLance](https://smas0900.github.io/)
 
 To get a local copy up and running follow these simple example steps.
 
