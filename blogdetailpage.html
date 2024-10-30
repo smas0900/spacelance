@@ -15,12 +15,16 @@
     .hero {
         background-color: #f2fafa;
         background-image: none;
+        max-height: 3px !important;
+
+        background-size:auto;
+
 
     }
 </style>
 </head>
 <body>
-    <section class="hero">
+    <!-- <section class="hero"> -->
         <div class="navbar-wrapper">
 
             <nav class="navbar navbar-expand-lg rounded-navbar ">
@@ -124,9 +128,9 @@
                 </div>
             </nav>
         </div>
-    </section>
+    <!-- </section> -->
     <li class="nav-item dropdown">
-  <a class="nav-link" href="#" id="megaMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find work</a>
+  <!-- <a class="nav-link" href="#" id="megaMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find work</a> -->
   <div class="dropdown-menu mega-menu p-4" aria-labelledby="megaMenuLink">
     <div class="row">
       <!-- Column 1: Webflow For -->
@@ -162,128 +166,7 @@
   </div>
 </li>
 
-    <section class="container text-center diff-category-card-container justify-content-center ">
-        <h5 class="recently-big-heading">Blog <span>Details</span></h5>
-
-        <div class="row ">
-            <!-- First row of cards (always visible) -->
-            <div class="col-md-3 diff-container-col" data-index="0">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/graphicdesign.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Graphic & Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col" data-index="1">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/cartoonandani.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Cartoon Animation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col" data-index="3">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/ilustration.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Illustration</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col" data-index="4">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/flyers.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Flyers & Vouchers</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat similar structure for more cards in the first row -->
-        </div>
-
-        <!-- Second row of cards -->
-
-        <div class="row">
-            <!-- First row of cards (always visible) -->
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/logo-on-paper.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Logo Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/social-graphics.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Social graphics</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/article-writing.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Article writing</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/video-editing.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Video Editing</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat similar structure for more cards in the first row -->
-        </div>
-
-        <!-- 3RD row of cards (initially hidden) -->
-
-        <div class="row d-none" id="extraCategories">
-            <div class="col-md-3 diff-container-col ">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/graphicdesign.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Graphic & Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/cartoonandani.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Cartoon Animation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/ilustration.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Illustration</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 diff-container-col">
-                <div class="diff-category-card">
-                    <img src="../spacelance/images/flyers.png" alt="Category Image" class="category-image">
-                    <div class="overlay">
-                        <p class="overlay-text">Flyers & Vouchers</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat similar structure for more additional cards -->
-        </div>
-
-        <!-- Toggle Button -->
-        <button id="toggleButton" class="btn btn-primary more-categories-btn" onclick="toggleCategories()">More
-            Categories</button>
-    </section>
-
+   
     <div id="lightbox" class="lightbox">
         <span class="close">&times;</span> <!-- Close button -->
         <span class="prev">&#10094;</span> <!-- Previous button -->
