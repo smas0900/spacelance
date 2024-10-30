@@ -803,6 +803,7 @@ body {
     color: rgba(37, 37, 37, 1);
     line-height: 36px;
     margin-bottom: 24px;
+    
 }
 
 .footer p {
@@ -817,8 +818,16 @@ body {
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
-
+    padding-left: 67px;
     line-height: 27px;
+}
+.footer-links-coltwo h5 {
+    padding-left: 67px;
+
+}
+.footer-links-colone h5 {
+    padding-left: 116px;
+
 }
 
 .footer-links-colone a {
@@ -828,6 +837,8 @@ body {
     line-height: 27px;
     font-weight: 400;
     font-size: 18px;
+    padding-left: 116px;
+
 }
 .loc img {
     max-width: 27px;
@@ -840,14 +851,23 @@ body {
 
 .footer-ico p {
     margin-bottom: 27px;
+    padding-left: 54px;
 }
 .footer-ico img {
     margin-right: 13PX;
 }
+
+.footer-ico h5 {
+    padding-left: 54px;
+
+}
+
 .footer .copyright {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #999;
+    margin-top: 71px;
+    font-size: 18px;
+    color: rgba(157, 157, 157, 1);
+    font-weight: 400;
+    margin-bottom: 28px;
 }
 
 /* Mega Menu */
