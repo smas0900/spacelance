@@ -24,9 +24,14 @@ body {
 
 .hero-section {
     margin-top: 20px;
-    padding-left: 16px;
-}
+    padding-left: 0px;
+    width: 1268px;
 
+}
+.hero-sec-img {
+    /* min-width: 100%; */
+    height: auto;
+}
 .navbar {
     max-width: 1295px;
     background-color: #ffffff;
@@ -108,10 +113,8 @@ body {
 /* Hide the default search button, replace it with the icon */
 .search-btn {
     background-color: rgba(30, 136, 229, 1);
-    /* Blue background for the icon */
     border: none;
     border-radius: 50%;
-    /* Round icon button */
     width: 50px;
     height: 50px;
     display: flex;
@@ -119,13 +122,10 @@ body {
     align-items: center;
     cursor: pointer;
     color: #fff;
-    /* Icon color */
     position: absolute;
     right: 10px;
-    /* Position it at the far right inside the search box */
     top: 50%;
     transform: translateY(-50%);
-    /* Vertically center the button */
 }
 
 
@@ -137,7 +137,7 @@ body {
 
 .btn-search-sec {
     display: flex;
-    margin-top: 117px;
+    margin-top: 83px;
 
 }
 
@@ -169,10 +169,8 @@ body {
     font-size: 24px;
     margin-left: 0;
     padding-left: 0px;
-    margin: auto;
-    width: 588px;
     opacity: 60%;
-    height: 36px;
+    width: 588px;
 }
 
 
@@ -183,11 +181,8 @@ body {
 /* First card started */
 .container-custom {
     padding-top: 50px;
-    /* Custom top padding */
     padding-bottom: 50px;
-    /* Custom bottom padding */
     border-radius: 10px;
-    /* Rounded corners for the container */
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 20px;
     width: 1267px;
@@ -198,12 +193,10 @@ body {
 
 .hero-card {
     border: none;
-    /* Remove borders from individual cards */
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
     transition: transform 0.3s ease;
-    /* Animation for hover effect */
     cursor: pointer;
     height: 325px;
 
@@ -369,7 +362,6 @@ body {
     flex: 0 0 auto;
     min-width: 372px;
     max-width: 372px;
-    /* Width of each card */
     height: 421px;
     scroll-snap-align: center;
     background-color: rgba(255, 255, 255);
@@ -492,7 +484,6 @@ body {
     margin: auto;
     text-align: center;
     line-height: 1.2;
-    /* Adjust line height as needed */
 }
 
 .diff-container-col {
@@ -582,7 +573,6 @@ body {
 .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     max-width: 100%;
     padding: 0;
 }
@@ -601,25 +591,21 @@ body {
 
 .col-pf {
     display: none;
-    /* Hide columns initially */
     height: 472px;
     width: 383px;
-    /* margin-right: 40px; */
-    /* width: 100%;  */
+
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 40px;
     padding-left: 0%;
     padding-right: 0%;
-    /* margin: auto; */
-    /* width: calc(33.33% - 40px); */
+
 
 
 }
 
 .col-pf.visible {
     display: block;
-    /* Show only the columns on the current page */
 }
 
 .pagination {
@@ -641,7 +627,6 @@ body {
 }
 
 
-/* Card container */
 .profile-card {
     height: 472px;
     width: 383px;
@@ -662,25 +647,21 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Image */
 .profile-image {
     width: 383px;
     height: 328px;
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    /* margin: 0; */
-    /* padding-left: 0%; */
+
 }
 
-/* Profile Info Container */
 .profile-info {
     padding: 16px;
     position: relative;
     text-align: left;
 }
 
-/* Profile Name */
 .profile-name {
     font-size: 20px;
     font-weight: bold;
@@ -688,14 +669,12 @@ body {
     margin: 0;
 }
 
-/* Profile Title */
 .profile-title {
     font-size: 14px;
     color: #888888;
     margin: 4px 0 16px;
 }
 
-/* Link Icon */
 .profile-link {
     position: absolute;
     right: 16px;
@@ -705,7 +684,6 @@ body {
     text-decoration: none;
 }
 
-/* Icon Hover Effect */
 .profile-link:hover {
     color: #0056b3;
 }
@@ -749,9 +727,7 @@ body {
 
 .form-res {
     max-width: 662px;
-    /* Set max-width for form container */
     width: 100%;
-    /* Ensures it remains responsive */
 }
 
 .form-control::placeholder {
@@ -841,121 +817,130 @@ body {
 }
 
 /* Mega Menu */
-.mega-menu .dropdown-item {
-    display: flex;
-    align-items: start;
-  }
-  
-  .mega-menu .dropdown-item div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .mega-menu .dropdown-item i {
-    font-size: 1.2rem;
-    margin-right: 8px;
-  }
-  
+/* Overlay Background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 900;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay on mega menu hover */
+.nav-item.dropdown:hover .overlay {
+    display: block;
+    opacity: 1; 
+}
+
 .mega-menu {
     position: absolute;
-    left: 0;
-    /* width: 100%; */
-    width: 824px;
-    height: 478px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     display: none;
-    padding: 20px;
-  }
-  
-  .nav-item.dropdown:hover .mega-menu {
-    display: block;
-  }
-  
-  /* Layout for Desktop */
-  .mega-menu .row > div {
-    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+    width: 824px;
+    margin-top: 22px;
+
+    opacity: 0;
+    transform: translateY(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Column Structure for Mega Menu */
+.mega-menu .row > div {
     padding: 10px 20px;
-  }
-  
-  .mega-menu .row > div:last-child {
+    border-right: 1px solid #dee2e6;
+}
+.mega-menu .row > div:last-child {
     border-right: none;
-  }
-  
-  /* Tablet View */
-  @media (max-width: 992px) {
-    .mega-menu .row {
-      flex-direction: column;
-    }
-  
-    .mega-menu .row > div {
-      border-right: none;
-      border-bottom: 1px solid #dee2e6;
-      padding: 10px;
-    }
-  
-    .mega-menu .row > div:last-child {
-      border-bottom: none;
-    }
-  
-    .customer-story {
-      margin-top: 15px;
-    }
-  }
-  
-  /* Customer Story Box */
-  .customer-story {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .customer-story h6 {
-    font-size: 0.9rem;
-    color: #007bff;
-  }
-  
-  .customer-story h5 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  
-  .customer-story p {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .customer-story small {
-    font-size: 0.8rem;
+}
+
+.mega-menu span {
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.mega-menu i {
+    height: 4px;
+}
+
+.mega-con-col2 a{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mega-con-col2 a:hover,
+.mega-menu span:hover {
+    color: rgba(30, 136, 229, 1);
+}
+/* Column Layout Adjustment */
+.mega-menu h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.mega-menu p,
+.mega-menu small {
+    font-size: 0.85rem;
+    color: #6c757d;
+    
+}
+
+.display-6 {
+    margin-top: 140px;
+}
+
+/* Button in Customer Story */
+.customer-story .btn {
     display: block;
-  }
-  /* Mobile View */
+    width: 50%;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px ;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Display Mega Menu on Hover */
+.nav-item.dropdown:hover .mega-menu {
+    display: block;
+}
+
+
+.mega-menu.active {
+    display: block;
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .mega-menu {
-      position: static; /* Position within the flow for better handling in mobile view */
-      width: 100%;
-      border-radius: 0;
-      box-shadow: none;
-      padding: 20px;
+        width: 100%;
+        border-radius: 0;
     }
-  
     .mega-menu .row {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
-    .mega-menu .row > div {
-      border: none;
-      padding: 15px 0;
-    }
-  
-    /* Customer Story on Mobile */
-    .customer-story {
-      margin-top: 20px;
-      height: 434px;
-      padding: auto;
-
-    }
-  }
-  
+}
