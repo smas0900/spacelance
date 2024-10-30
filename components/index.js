@@ -80,15 +80,14 @@ lightbox.addEventListener('click', function (event) {
 
 //js for Portfolio-Sction starts from here
 
-const portfolioColumns = document.querySelectorAll('.col-pf'); // Select all portfolio columns
-const portfolioDots = document.querySelectorAll('.dot'); // Select all pagination dots
-const portfolioCardsPerPage = 3; // Number of cards to display per "page"
-let portfolioCurrentPage = 1; // Track the current page
+const portfolioColumns = document.querySelectorAll('.col-pf'); 
+const portfolioDots = document.querySelectorAll('.dot'); 
+const portfolioCardsPerPage = 3; 
+let portfolioCurrentPage = 1; 
 
 function portfolioShowPage(page) {
-    portfolioCurrentPage = page; // Update the current page number
+    portfolioCurrentPage = page; 
     
-    // Hide all portfolio columns initially by removing 'visible' class
     portfolioColumns.forEach((col) => {
         col.classList.remove('visible');
     });
@@ -103,8 +102,8 @@ function portfolioShowPage(page) {
     }
 
     // Update active dot
-    portfolioDots.forEach(dot => dot.classList.remove('active')); // Remove 'active' class from all dots
-    portfolioDots[page - 1].classList.add('active'); // Add 'active' class to the current page dot
+    portfolioDots.forEach(dot => dot.classList.remove('active')); 
+    portfolioDots[page - 1].classList.add('active'); 
 }
 
 // Initialize the first page
@@ -157,33 +156,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const megaMenuLink = document.getElementById("megaMenuLink");
-//     const megaMenu = document.querySelector(".mega-menu");
-//     const overlay = document.querySelector(".overlay");
-
-//     // Toggle Mega Menu and Overlay on Link Click
-//     megaMenuLink.addEventListener("click", function (event) {
-//         event.preventDefault(); // Prevent default link behavior
-//         event.stopPropagation(); // Prevent immediate close on click
-//         megaMenu.classList.toggle("active");
-//         overlay.classList.toggle("active");
-//     });
-
-//     // Close Mega Menu when clicking outside
-//     document.addEventListener("click", function (event) {
-//         if (!megaMenu.contains(event.target) && event.target !== megaMenuLink) {
-//             megaMenu.classList.remove("active");
-//             overlay.classList.remove("active");
-//         }
-//     });
-
-//     // Close Mega Menu when overlay is clicked
-//     overlay.addEventListener("click", function () {
-//         megaMenu.classList.remove("active");
-//         overlay.classList.remove("active");
-//     });
-// });
-
-
