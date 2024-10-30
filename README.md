@@ -4,7 +4,7 @@
 
 ## Live Demo 
 
-[SpaceLance](https://smas0900.github.io/)
+[SpaceLance](https://smas0900.github.io/spacelance/)
 
 To get a local copy up and running follow these simple example steps.
 
