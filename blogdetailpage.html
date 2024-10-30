@@ -11,7 +11,13 @@
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+    .hero {
+        background-color: #f2fafa;
+        background-image: none;
 
+    }
+</style>
 </head>
 <body>
     <section class="hero">
@@ -33,7 +39,7 @@
                                 <a class="nav-link " href="../spacelance/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Find work</a>
+                                <a class="nav-link dropdown" href="#">Find work</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="../spacelance/Generalpage.html">Find Freelancers</a>
@@ -52,6 +58,43 @@
                 </div>
             </nav>
         </div>
+    </section>
+    <li class="nav-item dropdown">
+  <a class="nav-link" href="#" id="megaMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find work</a>
+  <div class="dropdown-menu mega-menu p-4" aria-labelledby="megaMenuLink">
+    <div class="row">
+      <!-- Column 1: Webflow For -->
+      <div class="col-md-4">
+        <h6 class="text-muted">WEBFLOW FOR</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="dropdown-item">Enterprise</a></li>
+          <li><a href="#" class="dropdown-item">Agencies</a></li>
+          <li><a href="#" class="dropdown-item">Freelancers</a></li>
+          <li><a href="#" class="dropdown-item">Global alliances</a></li>
+          <li><a href="#" class="dropdown-item">Startups</a></li>
+          <li><a href="#" class="dropdown-item">Classrooms</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Compare -->
+      <div class="col-md-4">
+        <h6 class="text-muted">COMPARE</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="dropdown-item">Contentful</a></li>
+          <li><a href="#" class="dropdown-item">Sitecore</a></li>
+          <li><a href="#" class="dropdown-item">WordPress</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Customer Story -->
+      <div class="col-md-4 customer-story">
+        <h6 class="text-primary">CUSTOMER STORY</h6>
+        <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
+        <p>67%<small class="d-block">DECREASE IN DEV TICKETING</small></p>
+      </div>
+    </div>
+  </div>
+</li>
 
     <section class="container text-center diff-category-card-container justify-content-center ">
         <h5 class="recently-big-heading">Blog <span>Details</span></h5>
@@ -182,7 +225,8 @@
         <span class="next">&#10095;</span> <!-- Next button -->
     </div>
 
-    
+    <script src="/spacelance/components/index.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../spacelance/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -29,14 +31,51 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../spacelance/index.html">Home</a>
+                                <a class="nav-link activ" aria-c    urrent="page" href="../spacelance/index.html">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Find work</a>
-                            </li>
+                  
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="megaMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find work</a>
+                                <div class="dropdown-menu mega-menu p-4" aria-labelledby="megaMenuLink">
+                                  <div class="row">
+                                    <!-- Column 1: Webflow For -->
+                                    <div class="col-md-4">
+                                      <h6 class="text-muted">WEBFLOW FOR</h6>
+                                      <ul class="list-unstyled">
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-building me-2"></i><div><span>Enterprise</span><small class="d-block text-muted">Built for world-class organizations</small></div></a></li>
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-people me-2"></i><div><span>Agencies</span><small class="d-block text-muted">Accelerate your agency’s growth</small></div></a></li>
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-person me-2"></i><div><span>Freelancers</span><small class="d-block text-muted">Build custom sites for clients</small></div></a></li>
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-globe me-2"></i><div><span>Global alliances</span><small class="d-block text-muted">Unlock enterprise-level partnership</small></div></a></li>
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-lightning me-2"></i><div><span>Startups</span><small class="d-block text-muted">Move faster with Webflow</small></div></a></li>
+                                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i class="bi bi-mortarboard me-2"></i><div><span>Classrooms</span><small class="d-block text-muted">Register to use Webflow for free</small></div></a></li>
+                                      </ul>
+                                    </div>
+                              
+                                    <!-- Column 2: Compare -->
+                                    <div class="col-md-4">
+                                      <h6 class="text-muted">COMPARE</h6>
+                                      <p class="text-secondary">See how we stack up against the competition</p>
+                                      <ul class="list-unstyled">
+                                        <li><a href="#" class="dropdown-item">Contentful</a></li>
+                                        <li><a href="#" class="dropdown-item">Sitecore</a></li>
+                                        <li><a href="#" class="dropdown-item">WordPress</a></li>
+                                      </ul>
+                                    </div>
+                              
+                                    <!-- Column 3: Customer Story -->
+                                    <div class="col-md-4 customer-story bg-dark text-white p-3 rounded">
+                                      <h6 class="text-primary">CUSTOMER STORY</h6>
+                                      <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
+                                      <p class="display-6">67%<small class="d-block">DECREASE IN DEV TICKETING</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              
+
                             <li class="nav-item">
                                 <a class="nav-link" href="../spacelance/Generalpage.html">Find Freelancers</a>
                             </li>
@@ -60,20 +99,20 @@
             <div class="row d-flex align-items-stretch px-3">
 
                 <!-- Content Container -->
-                <div class="d-flex flex-column justify-content-center col-12 col-md-6 align-items-center">
-                    <div class="card-body">
+                <div class="d-flex flex-column justify-content-center col-12 col-md-6 align-items-stretch">
+                    <div class="card-body d-flex flex-column align-items-center">
                         <h2 class="hero-card-title">Are you looking for Freelancers?</h2>
                         <p class="hero-card-text">Hire Great Freelancers, Fast. Spacelance helps you hire elite
                             freelancers at a moment's notice</p>
 
                         <div class="btn-search-sec">
                             <a href="#" class="btn btn-primary btn-hero-search">Hire a freelancer</a>
-                            <form action="search-results.html" method="GET" class="search-form">
+                            <form action="search.html" method="GET" class="search-form" target="_blank">
                                 <div class="search-box">
                                     <input class="search-input" type="search" name="query"
                                         placeholder="search freelance work" aria-label="Search">
                                     <button class="search-btn" type="submit">
-                                        <i class="a"><img src="../spacelance/icons/image4.svg" alt=""></i>
+                                        <i class="a"><img src="../spacelance/icons/image4.svg" alt="Search Icon"></i>
                                     </button>
                                 </div>
                             </form>
@@ -82,7 +121,7 @@
                     </div>
                 </div>
                 <!-- Image Container -->
-                <div class="d-flex justify-content-center align-items-center col-12 col-md-6">
+                <div class="d-flex justify-content-center d-flex col-12 col-md-6">
                     <img src="../spacelance/images/Working remotely.png" class="img-fluid" alt="Illustration">
                 </div>
 
@@ -170,7 +209,7 @@
             </div>
             <div class="d-flex col-sm-12 col-lg-2 justify-content-end align-items-center no-gutters">
                 <button class="btn-arrow-left" onclick="scrollToLeft()">
-                    <i class="a"><img src="../spacelance/icons/bx_arrow-back.svg" alt=""></i>
+                    <i class="a"><img src="../spacelance\/icons/bx_arrow-back.svg" alt=""></i>
                 </button>
                 <button class="btn-arrow-right ms-auto" onclick="scrollToRight()">
                     <i class="a"><img src="../spacelance/icons/Vector.svg" alt=""></i>
@@ -510,9 +549,10 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/spacelance/components/index.js"></script>
+    <script src="../spacelance/components/index.js"></script>
 
 </body>
 
