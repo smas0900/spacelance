@@ -23,36 +23,50 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-      body {
+   
+  body {
+    background-color: #f2fafa;
+  }
 
-        background-color: #f2fafa;
+  .hero {
+    background-image: none;
+    position: relative;
+    min-width: none;
+    min-height: 2px;
+  }
 
-      }
+  .search-content {
+    margin-top: 25px;
+    max-width: 1268px;
+  
+  }
 
-      .hero {
-        background-image: none;
-        position: ;
-        min-width: none;
-        min-height: 2px;
-      }
-      .search-content p{
-        color: red;
-      }
+  .search-content h1 {
+    margin: 0;
+  }
 
-      .search-content {
-        margin-top: 25px;
-      }
-      .recently-work-section{
-        margin-top: 10px;
-      }
-    </style>
+  .search-content p {
+    color: red;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+
+  }
+
+  .recently-work-section {
+    margin-top: 10px;
+  }
+</style>
+
+
+
     <script>
-      // Retrieve the search term from the URL and display it on the page
+      // Retrieve the search term from the URL 
       window.onload = function () {
         const urlParams = new URLSearchParams(window.location.search);
         const searchQuery = urlParams.get('query');
         if (searchQuery) {
-          document.getElementById('search-result').textContent = `You searched: "${searchQuery}"`;
+          document.getElementById('search-result').textContent = `"${searchQuery}"`;
         } else {
           document.getElementById('search-result').textContent = "No search term provided.";
         }
@@ -148,18 +162,18 @@
                     </div>
                 </div>
             </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../spacelance/Generalpage.html">Find Freelancers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../spacelance/blogdetailpage.html">blog detail</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../spacelance/404.html">404</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-primary btn-nav nav-link" href="#">Post a project</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../spacelance/aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link activ" href="../spacelance/GeneralPage.html">General</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../spacelance/404.html">404</a>
+          </li>
+          <li class="nav-item">
+              <a class="btn btn-primary btn-nav nav-link" href="#">Post a project</a>
+          </li>
             </ul>
           </div>
         </div>
@@ -169,8 +183,17 @@
   </section>
 
   <section class="container search-content">
-    <h1>Search Freelance Work</h1>
-    <p id="search-result"></p>
+    <div class="row">
+      <div class="col-lg-4">
+        <h1>Search Result:</h1>
+  
+      </div>
+      <div class="col-lg-4">
+        <p id="search-result"></p>
+  
+      </div>
+    </div>
+    
   </section>
   <section class="container recently-work-section">
 
@@ -252,11 +275,63 @@
     </div>
   </section>
 
-  <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../spacelance/components/index.js"></script>
+  <footer class="footer">
+    <div class="container">
+        <div class="row text-center text-md-start footer-con">
+            <!-- Company Info -->
+            <div class="col-md-3 col-12 mb-4 mb-md-0">
+                <div class="footer-logo">
+                    <img src="../spacelance/images/footerlogo.png" alt="Logo">
+                </div>
+                <p>Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
+                </p>
+                <div class="social-icons">
+                    <a href="#"><img src="../spacelance/icons/ant-design_instagram-filled.svg"
+                            alt="ilustration"></a>
+                    <a href="#"><img src="../spacelance/icons/brandico_twitter-bird.svg" alt="ilustration"></a>
+                    <a href="#"><img src="../spacelance/icons/bxl_facebook.svg" alt="ilustration"></a>
+                </div>
+            </div>
+
+            <!-- For Clients -->
+            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-colone">
+                <h5>For Clients</h5>
+                <a href="#">Find Freelancers</a>
+                <a href="#">Post Project</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <!-- For Freelancers -->
+            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-coltwo">
+                <h5>For Freelancers</h5>
+                <a href="#">Find Work</a>
+                <a href="#">Create Account</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-ico">
+                <h5>Call Us</h5>
+                <p><i class="loc"><img src="../spacelance/icons/location-svgrepo-com (1).svg"
+                            alt="ilustration"></i>Kenya</p>
+                <p><i class="pho"><img src="../spacelance/icons/phone.svg" alt="ilustration"></i>+254700000000</p>
+                <p><i class="em"><img src="../spacelance/icons/clarity_email-line.svg"
+                            alt="ilustration"></i>bluelance@gmail.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center copyright">
+                &copy; 2022 Spacelance. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../spacelance/components/index.js"></script>
 
 </body>
 

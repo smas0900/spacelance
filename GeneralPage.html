@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,26 @@
     <link rel="stylesheet" href="../spacelance/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-    .body {
-        /* background-color: #f2fafa; */
-        background-image: none;
-        max-height: 3px !important;
+    <style>
+        .hero {
+            background-image: none;
+            min-height: 100px;
+        }
 
-        background-size:auto;
-
-
-    }
-
-    .container{
-        margin-top: 100px;
-    }
-    
-    .profile-detail-image {
-        width: 70vh;
-        height: auto;
-        padding: 16px;
-    }
-</style>
+        .container {
+            margin-top: 100px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- <section class="hero"> -->
+    <section class="hero">
         <div class="navbar-wrapper">
 
             <nav class="navbar navbar-expand-lg rounded-navbar ">
@@ -47,11 +41,12 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link " href="../spacelance/index.html">Home</a>
+                                <a class="nav-link" aria-c urrent="page" href="../spacelance/index.html">Home</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link dropdown-toggle" href="#" id="megaMenuLink"
                                     aria-expanded="false">Find work</a>
@@ -64,10 +59,11 @@
                                         <div class="col-md-5">
                                             <h6 class="text-muted">WEBFLOW FOR</h6>
                                             <ul class="list-unstyled">
-                                                <li><a href="../spacelance/blogpage.html" class="dropdown-item d-flex align-items-start"><i
+                                                <li><a href="../spacelance/blogpage.html"
+                                                        class="dropdown-item d-flex align-items-start"><i
                                                             class="bi bi-building me-2 mt-1"></i>
-                                                        <div><span>Blog</span><small
-                                                                class="d-block text-muted">Built for world-class
+                                                        <div><span>Blog</span><small class="d-block text-muted">Built
+                                                                for world-class
                                                                 organizations</small></div>
                                                     </a></li>
                                                 <li><a href="#" class="dropdown-item d-flex align-items-start"><i
@@ -121,11 +117,13 @@
                                     </div>
                                 </div>
                             </li>
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="../spacelance/aboutus.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../spacelance/GeneralPage.html">General</a>
+                                <a class="nav-link activ" href="../spacelance/GeneralPage.html">General</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../spacelance/404.html">404</a>
@@ -138,131 +136,88 @@
                 </div>
             </nav>
         </div>
-    <!-- </section> -->
-    <li class="nav-item dropdown">
-  <!-- <a class="nav-link" href="#" id="megaMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find work</a> -->
-  <div class="dropdown-menu mega-menu p-4" aria-labelledby="megaMenuLink">
-    <div class="row">
-      <!-- Column 1: Webflow For -->
-      <div class="col-md-4">
-        <h6 class="text-muted">WEBFLOW FOR</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="dropdown-item">Enterprise</a></li>
-          <li><a href="#" class="dropdown-item">Agencies</a></li>
-          <li><a href="#" class="dropdown-item">Freelancers</a></li>
-          <li><a href="#" class="dropdown-item">Global alliances</a></li>
-          <li><a href="#" class="dropdown-item">Startups</a></li>
-          <li><a href="#" class="dropdown-item">Classrooms</a></li>
-        </ul>
-      </div>
 
-      <!-- Column 2: Compare -->
-      <div class="col-md-4">
-        <h6 class="text-muted">COMPARE</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="dropdown-item">Contentful</a></li>
-          <li><a href="#" class="dropdown-item">Sitecore</a></li>
-          <li><a href="#" class="dropdown-item">WordPress</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Customer Story -->
-      <div class="col-md-4 customer-story">
-        <h6 class="text-primary">CUSTOMER STORY</h6>
-        <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
-        <p>67%<small class="d-block">DECREASE IN DEV TICKETING</small></p>
-      </div>
-    </div>
-  </div>
-</li>
-  
-
-<section class="container">
-<!-- <img src="../spacelance/images/bunnydesign.png" alt=""> -->
-    <div class="row d-flex flex-wrap ">
-
-        <div class="col-lg-12">
-            <div class="blog-detail-profil">
-                <img src="../spacelance/images/bhaskarTiwari.png" alt="Profile" class="profile-detail-image img-fluid">
-                <div class="profile-info">
-                    <h3 class="profile-name">Bunny.design</h3>
-                    <p class="profile-title">UI/UX Designer</p>
-                    <p class="profile-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus
-                        eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
-                        sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
-                        dui, sit accumsan, tincidunt massa. Dui cras magnis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus
-                        eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
-                        sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
-                        dui, sit accumsan, tincidunt massa. Dui cras magnis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus
-                        eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
-                        sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
-                        dui, sit accumsan, tincidunt massa. Dui cras magnis.</p>
-
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-   
-
-<footer class="footer">
-    <div class="container">
-        <div class="row text-center text-md-start footer-con">
-            <!-- Company Info -->
-            <div class="col-md-3 col-12 mb-4 mb-md-0">
-                <div class="footer-logo">
-                    <img src="../spacelance/images/footerlogo.png" alt="Logo">
-                </div>
-                <p>Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
-                </p>
-                <div class="social-icons">
-                    <a href="#"><img src="../spacelance/icons/ant-design_instagram-filled.svg"
-                            alt="ilustration"></a>
-                    <a href="#"><img src="../spacelance/icons/brandico_twitter-bird.svg" alt="ilustration"></a>
-                    <a href="#"><img src="../spacelance/icons/bxl_facebook.svg" alt="ilustration"></a>
-                </div>
-            </div>
-
-            <!-- For Clients -->
-            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-colone">
-                <h5>For Clients</h5>
-                <a href="#">Find Freelancers</a>
-                <a href="#">Post Project</a>
-                <a href="#">Refund Policy</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-
-            <!-- For Freelancers -->
-            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-coltwo">
-                <h5>For Freelancers</h5>
-                <a href="#">Find Work</a>
-                <a href="#">Create Account</a>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-ico">
-                <h5>Call Us</h5>
-                <p><i class="loc"><img src="../spacelance/icons/location-svgrepo-com (1).svg"
-                            alt="ilustration"></i>Kenya</p>
-                <p><i class="pho"><img src="../spacelance/icons/phone.svg" alt="ilustration"></i>+254700000000</p>
-                <p><i class="em"><img src="../spacelance/icons/clarity_email-line.svg"
-                            alt="ilustration"></i>bluelance@gmail.com</p>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="gentop col-lg-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus
+                    eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
+                    sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
+                    dui, sit accumsan, tincidunt massa. Dui cras magnis.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center copyright">
-                &copy; 2022 Spacelance. All rights reserved.
+            <div class="genb col-lg-10">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus
+                    eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
+                    sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
+                    dui, sit accumsan, tincidunt massa. Dui cras magnis.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Ut erat bibendum ornare urna, cursus
+                    eget convallis. Feugiat imperdiet posuere justo, ultrices interdum
+                    sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra
+                    dui, sit accumsan, tincidunt massa. Dui cras magnis.</p>
             </div>
         </div>
-    </div>
-</footer>
-<script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../spacelance/components/index.js"></script>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start footer-con">
+                <!-- Company Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0">
+                    <div class="footer-logo">
+                        <img src="../spacelance/images/footerlogo.png" alt="Logo">
+                    </div>
+                    <p>Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="../spacelance/icons/ant-design_instagram-filled.svg"
+                                alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/brandico_twitter-bird.svg" alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/bxl_facebook.svg" alt="ilustration"></a>
+                    </div>
+                </div>
+
+                <!-- For Clients -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-colone">
+                    <h5>For Clients</h5>
+                    <a href="#">Find Freelancers</a>
+                    <a href="#">Post Project</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <!-- For Freelancers -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-coltwo">
+                    <h5>For Freelancers</h5>
+                    <a href="#">Find Work</a>
+                    <a href="#">Create Account</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-ico">
+                    <h5>Call Us</h5>
+                    <p><i class="loc"><img src="../spacelance/icons/location-svgrepo-com (1).svg"
+                                alt="ilustration"></i>Kenya</p>
+                    <p><i class="pho"><img src="../spacelance/icons/phone.svg" alt="ilustration"></i>+254700000000</p>
+                    <p><i class="em"><img src="../spacelance/icons/clarity_email-line.svg"
+                                alt="ilustration"></i>bluelance@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    &copy; 2022 Spacelance. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../spacelance/components/index.js"></script>
 
 </body>
 

@@ -1,71 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Product Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../spacelance/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f2fafa;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .error-container {
-            text-align: center;
-        }
-        .error-code {
-            font-size: 100px;
-            font-weight: bold;
-            color: #343a40;
-        }
-        .error-message {
-            font-size: 24px;
-            color: #6c757d;
-        }
-        .error-description {
-            font-size: 16px;
-            color: #6c757d;
-            margin-bottom: 20px;
-        }
-        .btn-custom {
-            color: white;
-            background-color: rgba(30, 136, 229, 1);
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 25px;
-            text-decoration: none;
-            height: 76px;
-            min-width: 250px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* height: 100px; */
+    background-color: #f2fafa;
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+}
+
+.error-container {
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.error-code {
+    font-size: 100px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.error-description {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    color: white;
+    background-color: rgba(30, 136, 229, 1);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    height: 76px;
+    min-width: 250px;
     font-weight: 600;
     line-height: 36px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+        .hero {
+            background-image: none;
+            min-height: 100px;
         }
-        .btn-custom:hover {
-            background-color: #0056b3;
-            text-decoration: none;
+
+        .container {
+            margin-top: 100px;
+            text-align: left;
         }
     </style>
 </head>
-<body>
 
+<body>
+    <section class="hero">
+        <div class="navbar-wrapper">
+
+            <nav class="navbar navbar-expand-lg rounded-navbar ">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../spacelance/index.html">
+                        <img src="../spacelance/images/IMG-20220218-WA0001.png" alt="Logo" class="d-inline-block">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-c urrent="page" href="../spacelance/index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="megaMenuLink"
+                                    aria-expanded="false">Find work</a>
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                                <!-- Mega Menu -->
+                                <div class="mega-menu p-4" aria-labelledby="megaMenuLink">
+                                    <div class="row">
+                                        <!-- Column 1: Webflow For -->
+                                        <div class="col-md-5">
+                                            <h6 class="text-muted">WEBFLOW FOR</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="../spacelance/blogpage.html"
+                                                        class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-building me-2 mt-1"></i>
+                                                        <div><span>Blog</span><small class="d-block text-muted">Built
+                                                                for world-class
+                                                                organizations</small></div>
+                                                    </a></li>
+                                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-people me-2 mt-1"></i>
+                                                        <div><span>Agencies</span><small
+                                                                class="d-block text-muted">Accelerate your agency’s
+                                                                growth</small></div>
+                                                    </a></li>
+                                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-person me-2 mt-1"></i>
+                                                        <div><span>Freelancers</span><small
+                                                                class="d-block text-muted">Build custom sites for
+                                                                clients</small></div>
+                                                    </a></li>
+                                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-globe me-2 mt-1"></i>
+                                                        <div><span>Global alliances</span><small
+                                                                class="d-block text-muted">Unlock enterprise-level
+                                                                partnership</small></div>
+                                                    </a></li>
+                                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-lightning me-2 mt-1"></i>
+                                                        <div><span>Startups</span><small class="d-block text-muted">Move
+                                                                faster with Webflow</small></div>
+                                                    </a></li>
+                                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                                                            class="bi bi-mortarboard me-2 mt-1"></i>
+                                                        <div><span>Classrooms</span><small
+                                                                class="d-block text-muted">Register to use Webflow for
+                                                                free</small></div>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Column 2: Compare -->
+                                        <div class="col-md-3 mega-con-col2">
+                                            <h6 class="text-muted">COMPARE</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="dropdown-item">Contentful</a></li>
+                                                <li><a href="#" class="dropdown-item">Sitecore</a></li>
+                                                <li><a href="#" class="dropdown-item">WordPress</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Column 3: Customer Story -->
+                                        <div class="col-md-4 customer-story bg-dark text-white p-3 rounded">
+                                            <button class="btn btn-primary">CUSTOMER STORY</button>
+                                            <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
+                                            <h5 class="display-6">67%<small class="d-block">DECREASE IN DEV
+                                                    TICKETING</small></h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../spacelance/aboutus.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../spacelance/GeneralPage.html">General</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link activ" href="../spacelance/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-nav nav-link" href="#">Post a project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+   
     <div class="container">
         <div class="row">
             <div class="col-md-12 error-container">
                 <div class="error-code">404</div>
                 <div class="error-message">Oops! Page Not Found</div>
                 <p class="error-description">
-                    The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+                    The page you are looking for might have been removed, had its name changed, or is temporarily
+                    unavailable.
                 </p>
                 <a href="../spacelance/index.html" class="btn btn-custom">Go Back to Home</a>
             </div>
         </div>
-    </div>
+    </div> 
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start footer-con">
+                <!-- Company Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0">
+                    <div class="footer-logo">
+                        <img src="../spacelance/images/footerlogo.png" alt="Logo">
+                    </div>
+                    <p>Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="../spacelance/icons/ant-design_instagram-filled.svg"
+                                alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/brandico_twitter-bird.svg" alt="ilustration"></a>
+                        <a href="#"><img src="../spacelance/icons/bxl_facebook.svg" alt="ilustration"></a>
+                    </div>
+                </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                <!-- For Clients -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-colone">
+                    <h5>For Clients</h5>
+                    <a href="#">Find Freelancers</a>
+                    <a href="#">Post Project</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <!-- For Freelancers -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-links-coltwo">
+                    <h5>For Freelancers</h5>
+                    <a href="#">Find Work</a>
+                    <a href="#">Create Account</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 col-12 mb-4 mb-md-0 footer-links footer-ico">
+                    <h5>Call Us</h5>
+                    <p><i class="loc"><img src="../spacelance/icons/location-svgrepo-com (1).svg"
+                                alt="ilustration"></i>Kenya</p>
+                    <p><i class="pho"><img src="../spacelance/icons/phone.svg" alt="ilustration"></i>+254700000000</p>
+                    <p><i class="em"><img src="../spacelance/icons/clarity_email-line.svg"
+                                alt="ilustration"></i>bluelance@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    &copy; 2022 Spacelance. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a6f7ce814a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../spacelance/components/index.js"></script>
+
 </body>
+
 </html>
