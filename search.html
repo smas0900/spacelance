@@ -23,7 +23,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-      body {
+      /* body {
 
         background-color: #f2fafa;
 
@@ -35,24 +35,64 @@
         min-width: none;
         min-height: 2px;
       }
-      .search-content p{
-        color: red;
-      }
+
 
       .search-content {
         margin-top: 25px;
+        display: flex;
+
+      }
+      .search-content p{
+        color: red;
+        display: flex;
+      
       }
       .recently-work-section{
         margin-top: 10px;
-      }
-    </style>
+      } */<style>
+  body {
+    background-color: #f2fafa;
+  }
+
+  .hero {
+    background-image: none;
+    position: relative;
+    min-width: none;
+    min-height: 2px;
+  }
+
+  .search-content {
+    margin-top: 25px;
+    max-width: 1268px;
+  
+  }
+
+  .search-content h1 {
+    margin: 0;
+  }
+
+  .search-content p {
+    color: red;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+
+  }
+
+  .recently-work-section {
+    margin-top: 10px;
+  }
+</style>
+
+
+
     <script>
-      // Retrieve the search term from the URL and display it on the page
+      // Retrieve the search term from the URL 
       window.onload = function () {
         const urlParams = new URLSearchParams(window.location.search);
         const searchQuery = urlParams.get('query');
         if (searchQuery) {
-          document.getElementById('search-result').textContent = `You searched: "${searchQuery}"`;
+          document.getElementById('search-result').textContent = `"${searchQuery}"`;
         } else {
           document.getElementById('search-result').textContent = "No search term provided.";
         }
@@ -169,8 +209,17 @@
   </section>
 
   <section class="container search-content">
-    <h1>Search Freelance Work</h1>
-    <p id="search-result"></p>
+    <div class="row">
+      <div class="col-lg-4">
+        <h1>Search Result:</h1>
+  
+      </div>
+      <div class="col-lg-4">
+        <p id="search-result"></p>
+  
+      </div>
+    </div>
+    
   </section>
   <section class="container recently-work-section">
 
