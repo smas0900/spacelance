@@ -22,67 +22,41 @@
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900 &display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-      /* body {
-
+  
+      <style>
+        body {
         background-color: #f2fafa;
-
       }
 
       .hero {
         background-image: none;
-        position: ;
+        position: relative;
         min-width: none;
         min-height: 2px;
       }
 
-
       .search-content {
         margin-top: 25px;
-        display: flex;
+        max-width: 1268px;
 
       }
-      .search-content p{
+
+      .search-content h1 {
+        margin: 0;
+      }
+
+      .search-content p {
         color: red;
-        display: flex;
-      
+        margin: 0;
+        text-align: center;
+        flex: 1;
+
       }
-      .recently-work-section{
+
+      .recently-work-section {
         margin-top: 10px;
-      } */<style>
-  body {
-    background-color: #f2fafa;
-  }
-
-  .hero {
-    background-image: none;
-    position: relative;
-    min-width: none;
-    min-height: 2px;
-  }
-
-  .search-content {
-    margin-top: 25px;
-    max-width: 1268px;
-  
-  }
-
-  .search-content h1 {
-    margin: 0;
-  }
-
-  .search-content p {
-    color: red;
-    margin: 0;
-    text-align: center;
-    flex: 1;
-
-  }
-
-  .recently-work-section {
-    margin-top: 10px;
-  }
-</style>
+      }
+    </style>
 
 
 
@@ -120,74 +94,68 @@
                 <a class="nav-link " href="../spacelance/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link dropdown-toggle" href="#" id="megaMenuLink"
-                    aria-expanded="false">Find work</a>
+                <a class="nav-link dropdown-toggle" href="#" id="megaMenuLink" aria-expanded="false">Find work</a>
                 <!-- Overlay -->
                 <div class="overlay"></div>
                 <!-- Mega Menu -->
                 <div class="mega-menu p-4" aria-labelledby="megaMenuLink">
-                    <div class="row">
-                        <!-- Column 1: Webflow For -->
-                        <div class="col-md-5">
-                            <h6 class="text-muted">WEBFLOW FOR</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-building me-2 mt-1"></i>
-                                        <div><span>Enterprise</span><small
-                                                class="d-block text-muted">Built for world-class
-                                                organizations</small></div>
-                                    </a></li>
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-people me-2 mt-1"></i>
-                                        <div><span>Agencies</span><small
-                                                class="d-block text-muted">Accelerate your agency’s
-                                                growth</small></div>
-                                    </a></li>
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-person me-2 mt-1"></i>
-                                        <div><span>Freelancers</span><small
-                                                class="d-block text-muted">Build custom sites for
-                                                clients</small></div>
-                                    </a></li>
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-globe me-2 mt-1"></i>
-                                        <div><span>Global alliances</span><small
-                                                class="d-block text-muted">Unlock enterprise-level
-                                                partnership</small></div>
-                                    </a></li>
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-lightning me-2 mt-1"></i>
-                                        <div><span>Startups</span><small class="d-block text-muted">Move
-                                                faster with Webflow</small></div>
-                                    </a></li>
-                                <li><a href="#" class="dropdown-item d-flex align-items-start"><i
-                                            class="bi bi-mortarboard me-2 mt-1"></i>
-                                        <div><span>Classrooms</span><small
-                                                class="d-block text-muted">Register to use Webflow for
-                                                free</small></div>
-                                    </a></li>
-                            </ul>
-                        </div>
-                        <!-- Column 2: Compare -->
-                        <div class="col-md-3 mega-con-col2">
-                            <h6 class="text-muted">COMPARE</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="dropdown-item">Contentful</a></li>
-                                <li><a href="#" class="dropdown-item">Sitecore</a></li>
-                                <li><a href="#" class="dropdown-item">WordPress</a></li>
-                            </ul>
-                        </div>
-                        <!-- Column 3: Customer Story -->
-                        <div class="col-md-4 customer-story bg-dark text-white p-3 rounded">
-                            <button class="btn btn-primary">CUSTOMER STORY</button>
-                            <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
-                            <h5 class="display-6">67%<small class="d-block">DECREASE IN DEV
-                                    TICKETING</small></h5>
-                        </div>
-
+                  <div class="row">
+                    <!-- Column 1: Webflow For -->
+                    <div class="col-md-5">
+                      <h6 class="text-muted">WEBFLOW FOR</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-building me-2 mt-1"></i>
+                            <div><span>Enterprise</span><small class="d-block text-muted">Built for world-class
+                                organizations</small></div>
+                          </a></li>
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-people me-2 mt-1"></i>
+                            <div><span>Agencies</span><small class="d-block text-muted">Accelerate your agency’s
+                                growth</small></div>
+                          </a></li>
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-person me-2 mt-1"></i>
+                            <div><span>Freelancers</span><small class="d-block text-muted">Build custom sites for
+                                clients</small></div>
+                          </a></li>
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-globe me-2 mt-1"></i>
+                            <div><span>Global alliances</span><small class="d-block text-muted">Unlock enterprise-level
+                                partnership</small></div>
+                          </a></li>
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-lightning me-2 mt-1"></i>
+                            <div><span>Startups</span><small class="d-block text-muted">Move
+                                faster with Webflow</small></div>
+                          </a></li>
+                        <li><a href="#" class="dropdown-item d-flex align-items-start"><i
+                              class="bi bi-mortarboard me-2 mt-1"></i>
+                            <div><span>Classrooms</span><small class="d-block text-muted">Register to use Webflow for
+                                free</small></div>
+                          </a></li>
+                      </ul>
                     </div>
+                    <!-- Column 2: Compare -->
+                    <div class="col-md-3 mega-con-col2">
+                      <h6 class="text-muted">COMPARE</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#" class="dropdown-item">Contentful</a></li>
+                        <li><a href="#" class="dropdown-item">Sitecore</a></li>
+                        <li><a href="#" class="dropdown-item">WordPress</a></li>
+                      </ul>
+                    </div>
+                    <!-- Column 3: Customer Story -->
+                    <div class="col-md-4 customer-story bg-dark text-white p-3 rounded">
+                      <button class="btn btn-primary">CUSTOMER STORY</button>
+                      <h5>How Dropbox Sign transformed collaboration with Webflow</h5>
+                      <h5 class="display-6">67%<small class="d-block">DECREASE IN DEV
+                          TICKETING</small></h5>
+                    </div>
+
+                  </div>
                 </div>
-            </li>
+              </li>
               <li class="nav-item">
                 <a class="nav-link " href="../spacelance/Generalpage.html">Find Freelancers</a>
               </li>
@@ -212,14 +180,14 @@
     <div class="row">
       <div class="col-lg-4">
         <h1>Search Result:</h1>
-  
+
       </div>
       <div class="col-lg-4">
         <p id="search-result"></p>
-  
+
       </div>
     </div>
-    
+
   </section>
   <section class="container recently-work-section">
 
