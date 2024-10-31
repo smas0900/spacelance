@@ -1,3 +1,51 @@
+
+
+//   js for navbar megamenu
+document.addEventListener("DOMContentLoaded", function () {
+    const megaMenuLink = document.getElementById("megaMenuLink");
+    const megaMenu = document.querySelector(".mega-menu");
+    const overlay = document.querySelector(".overlay");
+
+   
+
+    megaMenuLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Toggle the active class to control visibility and animation
+        if (megaMenu.classList.contains("active")) {
+            megaMenu.classList.remove("active");
+            setTimeout(() => megaMenu.style.display = 'none', 300); // Delay hiding to allow animation
+            overlay.classList.remove("active");
+        } else {
+            megaMenu.style.display = 'block';
+            setTimeout(() => megaMenu.classList.add("active"), 10); // Small delay to trigger transition
+            overlay.classList.add("active");
+            positionMegaMenu();
+        }
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!megaMenu.contains(event.target) && event.target !== megaMenuLink) {
+            megaMenu.classList.remove("active");
+            setTimeout(() => megaMenu.style.display = 'none', 300);
+            overlay.classList.remove("active");
+        }
+    });
+
+    overlay.addEventListener("click", function () {
+        megaMenu.classList.remove("active");
+        setTimeout(() => megaMenu.style.display = 'none', 300);
+        overlay.classList.remove("active");
+    });
+
+    window.addEventListener("resize", function () {
+        if (megaMenu.classList.contains("active")) {
+            positionMegaMenu();
+        }
+    });
+});
+
 function scrollToRight() {
     const container = document.querySelector('.scroll-container');
     container.scrollBy({ left: 300, behavior: 'smooth' }); // Adjust the scroll distance
@@ -109,50 +157,3 @@ function portfolioShowPage(page) {
 // Initialize the first page
 portfolioShowPage(portfolioCurrentPage);
 
-
-
-//   js for navbar megamenu
-document.addEventListener("DOMContentLoaded", function () {
-    const megaMenuLink = document.getElementById("megaMenuLink");
-    const megaMenu = document.querySelector(".mega-menu");
-    const overlay = document.querySelector(".overlay");
-
-   
-
-    megaMenuLink.addEventListener("click", function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        // Toggle the active class to control visibility and animation
-        if (megaMenu.classList.contains("active")) {
-            megaMenu.classList.remove("active");
-            setTimeout(() => megaMenu.style.display = 'none', 300); // Delay hiding to allow animation
-            overlay.classList.remove("active");
-        } else {
-            megaMenu.style.display = 'block';
-            setTimeout(() => megaMenu.classList.add("active"), 10); // Small delay to trigger transition
-            overlay.classList.add("active");
-            positionMegaMenu();
-        }
-    });
-
-    document.addEventListener("click", function (event) {
-        if (!megaMenu.contains(event.target) && event.target !== megaMenuLink) {
-            megaMenu.classList.remove("active");
-            setTimeout(() => megaMenu.style.display = 'none', 300);
-            overlay.classList.remove("active");
-        }
-    });
-
-    overlay.addEventListener("click", function () {
-        megaMenu.classList.remove("active");
-        setTimeout(() => megaMenu.style.display = 'none', 300);
-        overlay.classList.remove("active");
-    });
-
-    window.addEventListener("resize", function () {
-        if (megaMenu.classList.contains("active")) {
-            positionMegaMenu();
-        }
-    });
-});
