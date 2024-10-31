@@ -404,7 +404,7 @@ body {
     padding-top: 20px;
 }
 
-.scroll-apply a {}
+
 
 .bid {
     color: rgba(37, 37, 37, 1) !important;
@@ -575,18 +575,18 @@ body {
     flex-wrap: wrap;
     max-width: 100%;
     padding: 0;
+    margin-left: 24px;
   }
   
   .portfolio-section {
     margin-top: 166px !important;
-    width: 1269px;
     /* width: 100%; */
-    /* max-width: 1269px; */
+    max-width: 1337px;
     text-align: center;
     margin-top: 171px;
     padding-left: 0;
     padding-right: 0;
-    margin: auto;
+    /* margin: auto; */
   
   
   }
@@ -989,12 +989,163 @@ body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+
+/* Responsive Adjustments *//* Small devices (landscape phones, 576px and up) */
+@media (min-width: 500px) and (max-width: 767.98px) { 
+    body {
+        overflow-x: hidden;
+    }
+    
     .mega-menu {
         width: 100%;
         border-radius: 0;
+        left: 0px;
+    }
+    .hero-sec-img {
+        max-width: 80%;
+        height: auto;    /* Maintain aspect ratio */
     }
     .mega-menu .row {
         flex-direction: column;
     }
+    .container {
+        max-width: 100%; /* Prevent overflow */
+        /* padding: 20px; */
+
+    }
+    
+    .btn-search-sec {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column; 
+      }
+      .btn-hero-search {
+        width: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .hero {
+        background-size: cover;
+     
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        
+      }
+
+      .hero-card-title {
+        font-size: 5vw; /* Smaller title size on mobile */
+      }
+  
+      .hero-card-text {
+        font-size: 3.5vw; /* Smaller text size on mobile */
+      }
+
+      .find-cover-sec {
+        margin-top: 1000px;
+      }
+
+      /* .recently-work-section h5 {
+        font-size: 5vw;
+      } */
+      .recently-work-section {
+        width: 100%;
+    }
+
+    .scroll-item {
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 15px;
+    }
+
+    .small-heading {
+        font-size: 24px;
+    }
+
+    .recently-big-heading {
+        font-size: 36px;
+    }
+    
+    .btn-arrow-left, .btn-arrow-right {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .diff-category-card {
+        margin-bottom: 20px;
+    }
+
+    .lightbox-image {
+        min-width: auto;
+        height: 500px;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+        margin-top: 230px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+       
+    
+    }
+
+    .portfolio-section {
+        margin-top: 166px !important;
+        width: 400px;
+        margin: auto;
+    }
+    .portfolio-cards {
+        margin: auto ;
+        max-width: auto;
+        /* width: auto; */
+    }
+
+    .newsletter-section {
+      
+        height: 661px;
+    }
+
+
+    .footer-links h5,.footer-links a, .footer-links p{
+        padding-left: 0px;
+
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:992px ) { 
+    .hero {
+        background-size: cover;
+        /* max-height: 20px; */
+      }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .hero-card-title {
+        font-size: 5vw; /* Smaller title size on mobile */
+      }
+  
+      .hero-card-text {
+        font-size: 3.5vw; /* Smaller text size on mobile */
+      }
+}
+@media (max-width: 576px) {
+    /* Even smaller adjustments for mobile */
+    .scroll-item {
+        height: auto; /* Allow card height to adjust based on content */
+    }
+    
+    .small-heading {
+        font-size: 18px;
+    }
+    
+    .recently-big-heading {
+        font-size: 28px;
+    }
+    
 }
